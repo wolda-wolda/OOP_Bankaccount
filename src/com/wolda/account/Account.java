@@ -26,7 +26,9 @@ public class Account {
     public String getAmount() {
         return String.valueOf(amount+"€");
     }
-
+    public double getAmountInt(){
+        return this.amount;
+    }
     public String getInterest() {
         double interestString;
         if (interest<1){

@@ -36,6 +36,9 @@ public class Client {
     }
 
     public void closeAccount() {
+        this.acc.withdraw(-30);
+        System.out.println("30€ Gebühr wurden berechnet");
+        this.acc.withdraw((int) this.acc.getAmountInt());
         this.acc=null;
     }
 }
